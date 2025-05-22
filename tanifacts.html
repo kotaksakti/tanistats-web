@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YTPGTZK1L"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+    
+          gtag('config', 'G-7YTPGTZK1L');
+        </script>
+  	<title>TaniStats</title>
+    <link rel="icon" href="images/logo_ts2.png" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
+      <div class="container-fluid">
+
+        
+        <!-- Logo & Title -->
+        <div>
+          <a href="index.html" style="text-decoration: none;">
+            <div class="d-flex align-items-center">
+              <img src="images/logo_ts2.png" 
+                   alt="Logo" class="ml-2" style="height: 45px;">
+              <span class="ml-2" style="font-size: 25px; font-weight: bold; color: #015a56;">TaniStats</span>
+            </div>
+          </a>     
+          
+          <!-- Text Below Logo & Title -->
+          <div class="ml-2" data-key="logo_title"  style="font-size: 9px; font-weight: normal; color: #015a56; margin-top: 0px;">
+            Malaysia Statistical Agricultural Registry
+          </div>
+        </div>
+
+        <!-- Toggler Button (Mobile) -->
+        <button class="btn btn-dark d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+    
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-3">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" data-key="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tanifacts.html">TaniFacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tableflex.html" data-key="d_explorer">TableFlex</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="agroprice.html">myAgroPrice</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="datarequest.html" data-key="d_request">Data Request</a>
+            </li> -->
+        </ul>
+    
+          <!-- Push Language Selector & Dark Mode Toggle to the Right -->
+          <div class="ml-auto d-flex align-items-center">
+            <a href="#" id="enLang" class="px-2 py-1 text-white bg-primary rounded">EN</a>
+            <a href="#" id="myLang" class="px-2 py-1 ml-1 text-dark bg-light rounded">MY</a>
+    
+            <!-- Dark Mode Toggle -->
+            <div class="custom-control custom-switch ml-3">
+              <input type="checkbox" class="custom-control-input" id="darkModeToggle">
+              <label class="custom-control-label" for="darkModeToggle">
+                <i class="fas fa-moon"></i>
+              </label>
+            </div>
+          </div>
+        </div>  
+    
+      </div>
+    </nav>
+    
+		
+		<div class="wrapper d-flex align-items-stretch"> 
+      <nav id="sidebar" class="active">
+        <span id="sidebarToggle" class="sidebar-arrow">▶</span>
+        <ul class="list-unstyled components mb-5">
+            <li class="active">
+                <a href="overview_tanifacts.html" data-key="menu_overview">
+                    <span class="fa fa-home"></span> <span class="menu-text">Overview</span>
+                </a>
+            </li>              
+            <li>
+                <a href="crops.html" data-key="menu_crops">
+                    <span class="fa fa-leaf"></span> <span class="menu-text">Crops</span>
+                </a>
+            </li>
+            <li>
+                <a href="livestock.html" data-key="menu_livestock">
+                    <span class="fa fa-paw"></span> <span class="menu-text">Livestock</span>
+                </a>
+            </li>
+            <li>
+                <a href="fisheries.html" data-key="menu_fisheries">
+                    <span class="fa fa-fish"></span> <span class="menu-text">Fisheries</span>
+                </a>
+            </li>
+            <li>
+                <a href="aquaculture.html" data-key="menu_aquaculture">
+                    <span class="fa fa-water"></span> <span class="menu-text">Aquaculture</span>
+                </a>
+            </li>
+            <li>
+              <a href="forest.html" data-key="menu_forestry">
+                  <span class="fa fa-tree"></span> <span class="menu-text">Forestry &amp; Logging</span>
+              </a>
+          </li>          
+        </ul>
+    </nav>  
+     
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+        <img src="images/tanistats.png" alt="Logo" class="ml-2" style="height: 70px;">
+        <!-- <h2 data-key="h2_tanistats">Overview</h2> -->
+
+
+        <div style="position: relative;">
+          <iframe class="frame"
+            data-page="tanistats"
+            data-en="https://app.powerbi.com/view?r=eyJrIjoiNjFjMWRmOGQtZjU4ZC00MzgwLThlMTAtM2M1ODA4ZTg4NGFhIiwidCI6IjM3M2U5MGQyLWQ5YTMtNDNiNS04MzJlLWM4ZTk4NDdhNzlmOCIsImMiOjEwfQ%3D%3D"
+            data-my="https://app.powerbi.com/view?r=eyJrIjoiNjFjMWRmOGQtZjU4ZC00MzgwLThlMTAtM2M1ODA4ZTg4NGFhIiwidCI6IjM3M2U5MGQyLWQ5YTMtNDNiNS04MzJlLWM4ZTk4NDdhNzlmOCIsImMiOjEwfQ%3D%3D"
+            src="https://app.powerbi.com/view?r=eyJrIjoiNjFjMWRmOGQtZjU4ZC00MzgwLThlMTAtM2M1ODA4ZTg4NGFhIiwidCI6IjM3M2U5MGQyLWQ5YTMtNDNiNS04MzJlLWM4ZTk4NDdhNzlmOCIsImMiOjEwfQ%3D%3D"
+            name="iframe_tanistats"
+            width="100%" height="2500px"  
+            title="Iframe powerbi" frameborder="0"
+            style="display: block;"
+          ></iframe>
+          <!-- Overlay to hide Power BI footer -->
+          <div style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background:#fafafa;
+          "></div>
+        </div>
+        
+
+
+      </div>
+        
+        
+      </div>
+     
+		</div>
+   
+    <footer class="footer">
+      <div class="container">
+        
+        <!-- Left Section: Logo & Department Name -->
+        <div class="footer-left">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jata_MalaysiaV2.svg/1200px-Jata_MalaysiaV2.svg.png" 
+               alt="Logo">
+          <div>
+            <h5 data-key="h5_footer">DEPARTMENT OF STATISTICS MALAYSIA</h5>
+            <p data-key="p_footer">© 2025 Malaysia Statistical Agriculture Registry</p>
+          </div>
+        </div>
+    
+    
+      </div>
+    </footer>
+    
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

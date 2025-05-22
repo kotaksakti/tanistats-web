@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YTPGTZK1L"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7YTPGTZK1L');
+    </script>
+  	<title>TaniStats</title>
+    <link rel="icon" href="images/logo_ts2.png" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- Headline Ticker -->
+    <div class="headline-ticker bg-dark text-white px-3">
+      <div class="ticker-wrapper d-flex align-items-center" style="height: 40px; overflow: hidden;">
+        <div class="ticker-content">
+          <span data-key="headline_text">
+            📢 Malaysia Statistical Agriculture Registry (MySAgR) Launches New Dashboard! &nbsp;&nbsp;&nbsp; 🌱 Explore TaniStats Today! &nbsp;&nbsp;&nbsp; 🚜 Support Sustainable Agriculture Through Data!
+          </span>
+        </div>
+      </div>
+    </div>
+        
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow">
+      <div class="container-fluid">
+        
+        <!-- Logo & Title -->
+        <div>
+          <a href="index.html" style="text-decoration: none;">
+            <div class="d-flex align-items-center">
+              <img src="images/logo_ts2.png" 
+                   alt="Logo" class="ml-2" style="height: 45px;">
+              <span class="ml-2" style="font-size: 25px; font-weight: bold; color: #015a56;">TaniStats</span>
+            </div>
+          </a>          
+          
+          <!-- Text Below Logo & Title -->
+          <div class="ml-2" data-key="logo_title" style="font-size: 9px; font-weight: normal; color: #015a56; margin-top: 0px;">
+            Malaysia Statistical Agricultural Registry
+          </div>
+        </div>
+
+        <!-- Toggler Button (Mobile) -->
+        <button class="btn btn-dark d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+    
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-3">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" data-key="home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tanifacts.html">TaniFacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tableflex.html" data-key="d_explorer">TableFlex</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="agroprice.html">myAgroPrice</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="datarequest.html" data-key="d_request">Data Request</a>
+            </li> -->
+        </ul>
+        
+    
+          <!-- Push Language Selector & Dark Mode Toggle to the Right -->
+          <div class="ml-auto d-flex align-items-center">
+            <a href="#" id="enLang" class="px-2 py-1 text-white bg-primary rounded">EN</a>
+            <a href="#" id="myLang" class="px-2 py-1 ml-1 text-dark bg-light rounded">MY</a>
+    
+            <!-- Dark Mode Toggle -->
+            <div class="custom-control custom-switch ml-3">
+              <input type="checkbox" class="custom-control-input" id="darkModeToggle">
+              <label class="custom-control-label" for="darkModeToggle">
+                <i class="fas fa-moon"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </nav>
+        
+      <!-- Carousel Start -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade mb-5" data-bs-ride="false" data-bs-pause="hover">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active position-relative">
+          <img src="images/1.jpg" class="d-block w-100 img-fluid" style="height: 500px; object-fit: cover;" alt="Slide 1">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-block carousel-caption-custom">
+            <h5 data-key="carousel_title_1">Welcome to MySAgR</h5>
+            <p data-key="carousel_subtitle_1">Integrated Agriculture Data for a Sustainable Future</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item position-relative">
+          <img src="images/2.jpg" class="d-block w-100 img-fluid" style="height: 500px; object-fit: cover;" alt="Slide 2">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-block carousel-caption-custom">
+            <h5 data-key="carousel_title_2">Data-Driven Decisions</h5>
+            <p data-key="carousel_subtitle_2">Empowering Policymakers & Farmers with Accurate Data</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item position-relative">
+          <img src="images/3.jpg" class="d-block w-100 img-fluid" style="height: 500px; object-fit: cover;" alt="Slide 3">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-block carousel-caption-custom">
+            <h5 data-key="carousel_title_3">Secure Food Supply</h5>
+            <p data-key="carousel_subtitle_3">Ensuring Resilience through Smart Agriculture Insights</p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item position-relative">
+          <img src="images/4.jpg" class="d-block w-100 img-fluid" style="height: 500px; object-fit: cover;" alt="Slide 4">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-block carousel-caption-custom">
+            <h5 data-key="carousel_title_4">Smart Farming</h5>
+            <p data-key="carousel_subtitle_4">Leveraging Technology for Efficient Agriculture</p>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="carousel-item position-relative">
+          <img src="images/5.jpg" class="d-block w-100 img-fluid" style="height: 500px; object-fit: cover;" alt="Slide 5">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-block carousel-caption-custom">
+            <h5 data-key="carousel_title_5">Agri Innovation</h5>
+            <p data-key="carousel_subtitle_5">Driving Sustainability Through Innovation</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel End -->
+
+        <!-- <div id="content">
+            <section class="w-100 px-4 py-5" style="background-color: transparent;">
+              <h4 class="fw-bold mb-5 text-center" data-key="glance_mysagr">Agriculture at a Glance</h4>
+              <div id="glance-cards-container" class="container"></div>
+            </section> -->
+
+              <!-- Malaysia at a Glance Start -->
+            <section class="w-100 px-4 py-5" style="background-color: transparent;">
+              <h4 class="fw-bold mb-5 text-center" data-key="glance_mysagr">Agriculture at a Glance</h4>
+
+              <div id="glance-cards-container" class="container"></div>
+
+            </section>
+            <!-- Malaysia at a Glance End -->
+
+        
+        
+        <!-- Page Content  -->
+          <!-- section 1  -->
+
+      
+          <div id="content" class="p-4 p-md-5">
+            <h2 class="mb-4" style="line-height: 1;">
+              <span data-key="title">Malaysia Statistical Agriculture Registry (MySAgR):</span> <br>
+              <span data-key="subtitle" style="font-size: 1.2rem; font-style: italic;">
+                  Integrated Data, Sustainable Agriculture, Secured Food Supply
+              </span>
+          </h2>          
+            <p data-key="description">
+              The <strong>Malaysia Statistical Agriculture Registry (MySAgR)</strong> is a centralized digital system that organizes and simplifies agricultural data. 
+              It brings together information from different sources, making it easier to monitor, analyze, and plan for a stronger and more sustainable agricultural sector.
+            </p>
+        
+            <div class="accordion" id="faqAccordion">
+                        <!-- Question 1 -->
+                <div class="card">
+                  <div class="card-header p-3" id="headingOne">
+                      <h5 class="mb-0">
+                          <button class="btn btn-link d-flex justify-content-between align-items-center w-100 text-left text-dark collapsed" 
+                              data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                              data-key="faq_question_1">
+                              <span>What is MySAgR?</span> 
+                              <i class="fas fa-chevron-down faq-icon"></i>
+                          </button>                  
+                      </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                      <div class="card-body" data-key="body_msagr">
+                        The Integrated Agricultural Statistics Database (MySAgR) is a centralized data platform that integrates and synchronizes Malaysia’s agricultural data across multiple agencies and institutions. 
+                        Developed in conjunction with the 2024 Agriculture Census, MySAgR combines census data, administrative records, and real-time agricultural information into a single, unified system.
+                        By merging various datasets—ranging from farmer demographics, crop production, and land use to supply chain data and market trends—MySAgR eliminates data silos, ensuring accurate, updated, and readily accessible information. 
+                        This integrated approach enables policymakers, researchers, and industry players to make informed, data-driven decisions that enhance the sector’s productivity, efficiency, and sustainability.
+                      </div>
+                  </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="card faq-card">
+                  <div class="card-header p-3" id="headingTwo">
+                      <h5 class="mb-0">
+                          <button class="btn btn-link d-flex justify-content-between align-items-center w-100 text-left text-dark collapsed" 
+                              data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                              data-key="faq_question_2">
+                              <span>Why Does MySAgR Matter? </span> 
+                              <i class="fas fa-chevron-down faq-icon"></i>
+                          </button>   
+                      </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                      <div class="card-body">
+                        <ul class="list-unstyled clean-list">
+                          <li class="li-indent-left">
+                            <i class="text-primary"></i>
+                            <span data-key="q2_a"><strong>Integrated & Accessible Data</strong></span>
+                          </li>
+                          <li>
+                            <i class="fa fa-check-square text-success"></i>
+                            <span data-key="q2_b"><strong>Strengthening Food Security</strong></span>
+                          </li>
+                          <li>
+                            <i class="fa fa-check-square text-success"></i>
+                            <span data-key="q2_c"><strong>Optimizing Resource Management</strong></span>
+                          </li>
+                          <li>
+                            <i class="fa fa-check-square text-success"></i>
+                            <span data-key="q2_d"><strong>Supporting Sustainable Agriculture</strong></span>
+                          </li>
+                          <li>
+                            <i class="fa fa-check-square text-success"></i>
+                            <span data-key="q2_e"><strong>Supporting Sustainable Agriculture</strong></span>
+                          </li>
+                          <li>
+                            <i class="fa fa-check-square text-success"></i>
+                            <span data-key="q2_f"><strong>Supporting Sustainable Agriculture</strong></span>
+                          </li>
+                        </ul>
+                                               
+                      </div>
+                  </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="card faq-card">
+                  <div class="card-header p-3" id="headingThree">
+                      <h5 class="mb-0">
+                          <button class="btn btn-link d-flex justify-content-between align-items-center w-100 text-left text-dark collapsed" 
+                              data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+                              data-key="faq_question_3">
+                              <span>Who Can Benefit from MySAgR? </span> 
+                              <i class="fas fa-chevron-down faq-icon"></i>
+                          </button>   
+                      </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                      <div class="card-body">
+                        <ul class="list-unstyled clean-list">
+                          <li class="li-indent-left">
+                            <i class="text-primary"></i>
+                            <span data-key="q3_a"><strong>Farmers & Agribusinesses</strong></span>
+                          </li>
+                          <li>
+                            <i class="fa fa-thumb-tack text-danger"></i>
+                            <span data-key="q3_b"><strong>Policymakers</strong></span>
+                          </li>
+                          <li>
+                            <i class="fa fa-thumb-tack text-danger"></i>
+                            <span data-key="q3_c"><strong>Industry & Investors</strong></span>
+                          </li>
+                          <li>
+                            <i class="fa fa-thumb-tack text-danger"></i>
+                            <span data-key="q3_d"><strong>Researchers & Academics</strong></span>
+                          </li>
+                          <li>
+                            <i class="fa fa-thumb-tack text-danger"></i>
+                            <span data-key="q3_e"><strong>Industry & Investors</strong></span>
+                          </li>
+                        </ul>
+                        
+                      </div>
+                  </div>
+                </div>
+
+                  <!-- Question 4 -->
+                  <div class="card faq-card">
+                    <div class="card-header p-3" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link d-flex justify-content-between align-items-center w-100 text-left text-dark collapsed" 
+                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+                                data-key="faq_question_4">
+                                <span>Who Can Benefit from MySAgR? </span> 
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>   
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                        <div class="card-body">
+                          <ul class="list-unstyled clean-list">
+                            <li class="li-indent-left">
+                              <i class="text-primary"></i>
+                              <span data-key="q4_a"><strong>Farmers & Agribusinesses</strong></span>
+                            </li>
+                            <li>
+                              <i class="fa fa-diamond text-info"></i>
+                              <span data-key="q4_b"><strong>Policymakers</strong></span>
+                            </li>
+                            <li>
+                              <i class="fa fa-diamond text-info"></i>
+                              <span data-key="q4_c"><strong>Industry & Investors</strong></span>
+                            </li>
+                            <li>
+                              <i class="fa fa-diamond text-info"></i>
+                              <span data-key="q4_d"><strong>Researchers & Academics</strong></span>
+                            </li>
+                            <li>
+                              <i class="fa fa-diamond text-info"></i>
+                              <span data-key="q4_e"><strong>Industry & Investors</strong></span>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+
+
+        
+                <a class="btn btn-primary rounded-pill px-4 me-3" href="tanifacts.html" style="margin-top: 20px;">TaniStats...</a>
+        
+            </div>
+
+
+            <!-- Section for Carousel -->
+            <section class="py-5 bg-light article-carousel">
+              <div class="container">
+                <h2 class="artikel-heading mb-5" data-key="article_t">Artikel Terbaharu Kami</h2>
+                
+                <div id="artikelCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-md-4 mb-4">
+                          <div class="card h-100">
+                            <img src="https://images.unsplash.com/photo-1507991426709-5bbee2c6a189?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Artikel 1">
+                            <div class="card-body">
+                              <h5 class="card-title" data-key="article_1">
+                                ACHIEVEMENT AND WAY FORWARD OF FISHERIES SUBSECTOR (AGROFOOD)
+                                </h5>
+                                <p class="card-text" data-key="article_date1">Published date : 1 October 2024</p>
+                              <a href="files/perikanan_a1.pdf" class="btn btn-modern mt-auto" target="_blank" data-key="learn_more">Baca Lagi</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                          <div class="card h-100">
+                            <img src="https://images.unsplash.com/photo-1629745295768-1a1db7213367?q=80&w=3324&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Artikel 2">
+                            <div class="card-body">
+                              <h5 class="card-title"  data-key="article_2">STRENGTHENING THE LIVESTOCK INDUSTRY</h5>
+                              <p class="card-text" data-key="article_date2">Published date : 22 September 2024</p>
+                              <a href="files/ternakan_a2.pdf" class="btn btn-modern mt-auto" target="_blank" data-key="learn_more">Baca Lagi</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                          <div class="card h-100">
+                            <img src="https://cdn.pixabay.com/photo/2023/04/28/09/59/mower-7956264_1280.jpg" class="card-img-top" alt="Artikel 3">
+                            <div class="card-body">
+                              <h5 class="card-title" data-key="article_3">POINT OF VIEW OF THE NATIONAL AGROFOOD CROP SUBSECTOR</h5>
+                              <p class="card-text" data-key="article_date3">Published date : 21 September 2024</p>
+                              <a href="files/tanaman_a3.pdf" class="btn btn-modern mt-auto" target="_blank" data-key="learn_more">Baca Lagi</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <!-- <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-md-4 mb-4">
+                          <div class="card h-100">
+                            <img src="https://cdn.pixabay.com/photo/2023/08/15/14/13/harvest-8192037_1280.jpg" class="card-img-top" alt="Artikel 4">
+                            <div class="card-body">
+                              <h5 class="card-title">Tajuk Artikel 4</h5>
+                              <p class="card-text">Ringkasan artikel untuk menarik minat pembaca.</p>
+                              <a href="#" class="btn btn-modern mt-auto">Baca Lagi</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                          <div class="card h-100">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/08/05/35/agriculture-1807549_1280.jpg" class="card-img-top" alt="Artikel 5">
+                            <div class="card-body">
+                              <h5 class="card-title">Tajuk Artikel 5</h5>
+                              <p class="card-text">Ringkasan artikel untuk menarik minat pembaca.</p>
+                              <a href="#" class="btn btn-modern mt-auto">Baca Lagi</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                          <div class="card h-100">
+                            <img src="https://cdn.pixabay.com/photo/2024/10/03/04/49/mountains-9092630_1280.jpg" class="card-img-top" alt="Artikel 6">
+                            <div class="card-body">
+                              <h5 class="card-title">Tajuk Artikel 6</h5>
+                              <p class="card-text">Ringkasan artikel untuk menarik minat pembaca.</p>
+                              <a href="#" class="btn btn-modern mt-auto">Baca Lagi</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+
+                  </div>
+                  
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#artikelCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Sebelumnya</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#artikelCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Seterusnya</span>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <!-- Tanistats Highlight Section -->
+            <section id="tanistats-highlight" class="py-5">
+              <div class="container">
+                <!-- Centered Title -->
+                <h2 class="tanistats-highlight-title mb-5" data-key="highlight_ts">Tanistats Highlight</h2>
+                
+                <!-- Carousel -->
+                <div id="highlightCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <!-- Slide 1 -->
+                      <div class="carousel-item active">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <video class="d-block w-100 video-soft-edge" style="height: 350px; object-fit: cover;" autoplay loop muted>
+                              <source src="https://www.myagricensus.gov.my/assets/caknatani/self-sufficient/_app/immutable/assets/paddy.DI1rCMDi.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>               
+                          </div>
+                          <div class="col-md-6">
+                            <h3 data-key="highlight_1">Self Sufficient</h3>
+                            <p data-key="highlight_s1">Malaysia has been importing more rice since the COVID-19 pandemic. But what does this mean for our food security?</p>
+                            <a href="https://www.myagricensus.gov.my/assets/caknatani/self-sufficient/en/" class="btn btn-primary mt-3" target="_blank" data-key="learn_more">
+                              Baca Lagi <i class="bi bi-arrow-right"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Slide 2 -->
+                      <div class="carousel-item">
+                        <div class="row align-items-center">
+                          <div class="col-md-6">
+                            <video class="d-block w-100 video-soft-edge" style="height: 350px; object-fit: cover;" autoplay loop muted>
+                              <source src="https://www.myagricensus.gov.my/assets/caknatani/know-your-food/_app/immutable/assets/chicken.BTuibaT_.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>                                                                                                         
+                          </div>
+                          <div class="col-md-6">
+                            <h3 data-key="highlight_2">Know Your Food</h3>
+                            <p data-key="highlight_s2">Besides durian, how much do you know about Malaysians’ favourite food?</p>
+                            <a href="https://www.myagricensus.gov.my/assets/caknatani/know-your-food/en/" class="btn btn-primary mt-3" target="_blank" data-key="learn_more">
+                              Baca Lagi <i class="bi bi-arrow-right"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- Slide 3 -->
+                    <!-- <div class="carousel-item">
+                      <div class="row align-items-center">
+                        <div class="col-md-6">
+                          <img src="https://cdn.pixabay.com/photo/2023/04/28/09/59/mower-7956264_1280.jpg" class="d-block w-100" alt="Highlight Image 3">
+                        </div>
+                        <div class="col-md-6">
+                          <h3>Title for Slide 3</h3>
+                          <p>Some content for the third slide. You can change this to highlight different statistics.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  <!-- Controls -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#highlightCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#highlightCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+          
+
+      </div>
+
+
+        
+
+      
+      
+      <footer class="footer">
+        <div class="container">
+          
+          <!-- Left Section: Logo & Department Name -->
+          <div class="footer-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jata_MalaysiaV2.svg/1200px-Jata_MalaysiaV2.svg.png" 
+                 alt="Logo">
+            <div>
+              <h5 data-key="h5_footer">DEPARTMENT OF STATISTICS MALAYSIA</h5>
+              <p data-key="p_footer">© 2025 Malaysia Statistical Agriculture Registry</p>
+            </div>
+          </div>
+      
+      
+        </div>
+      </footer>
+      
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
