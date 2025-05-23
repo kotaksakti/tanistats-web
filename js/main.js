@@ -115,7 +115,7 @@
             ss6: "(<strong>44.6%</strong> of agropreneurs)",
             ss7: "(<strong>4.9%</strong> of agropreneurs)",
             ss8: "(2024)"
-            
+
         },
         my: {
             headline_text:"📢 Pangkalan Data Statistik Pertanian Bersepadu (TaniStats) Melancarkan Dashboard Baharu! &nbsp;&nbsp;&nbsp; 🌱 Teroka TaniStats Hari Ini! &nbsp;&nbsp;&nbsp; 🚜 Sokong Pertanian Lestari Melalui Data!",
@@ -224,10 +224,10 @@
                 }
             }
         });
-    
+
         // ✅ Store selected language in localStorage
         localStorage.setItem("lang", lang);
-    
+
         // ✅ Update button styles (EN / MY)
         if (lang === "my") {
             $("#myLang").addClass("bg-primary text-white").removeClass("bg-light text-dark");
@@ -236,26 +236,26 @@
             $("#enLang").addClass("bg-primary text-white").removeClass("bg-light text-dark");
             $("#myLang").addClass("bg-light text-dark").removeClass("bg-primary text-white");
         }
-    
+
         // ✅ Update iframe for the current page
         $("iframe[data-page]").each(function () {
             let newSrc = lang === "my" ? $(this).attr("data-my") : $(this).attr("data-en");
             $(this).attr("src", newSrc);
         });
     }
-    
+
     // ✅ Load stored language on page load
     $(document).ready(function () {
         let storedLang = localStorage.getItem("lang") || "en";
         changeLanguage(storedLang);
-    
+
         $("#enLang, #myLang").click(function (e) {
             e.preventDefault();
             let selectedLang = $(this).attr("id") === "myLang" ? "my" : "en";
             changeLanguage(selectedLang);
         });
     });
-      
+
 
     // ================= Dark Mode Functionality =================
     function enableDarkMode() {
@@ -285,26 +285,26 @@
   $(document).ready(function () {
       let currentPath = window.location.pathname.toLowerCase().replace(/\/$/, ""); // Remove trailing slash
       console.log("Current path:", currentPath); // Debugging to see the actual path
-  
+
       // Reset active classes
       $(".navbar-nav .nav-link").removeClass("active");
-  
+
       // ✅ If on Home Page
       if (currentPath === "" || currentPath === "/" || currentPath === "/index") {
           $(".navbar-nav .nav-link[href='index.html']").addClass("active");
       }
-  
+
       // ✅ Highlight the current page in Navbar
       $(".navbar-nav .nav-link").each(function () {
           let menuItem = $(this);
           let menuHref = menuItem.attr("href").toLowerCase().replace(/\/$/, ""); // Remove trailing slash
           console.log("Checking menuHref:", menuHref); // Debugging the href being checked
-  
+
           if (currentPath === menuHref) {
               menuItem.addClass("active");
           }
       });
-  
+
       // ✅ Keep "tanifacts" highlighted for its subpages
       let tanistatsPages = [
           "/tanifacts",             // Exact match for TaniStats
@@ -315,50 +315,56 @@
           "/aquaculture",           // TaniStats subpage
           "/forest"                 // TaniStats subpage
       ];
-  
+
       // Debugging: log tanistatsPages
       console.log("tanifacts Pages:", tanistatsPages);
-  
+
       // Check if currentPath starts with any of the TaniStats pages
       if (tanistatsPages.some(page => currentPath.startsWith(page))) {
           console.log("tanifacts section detected. Highlighting 'tanifacts' link.");
-          
+
           // Check for the link that corresponds to TaniStats and highlight it
           $(".navbar-nav .nav-link[href*='tanifacts']").addClass("active"); // Highlight "TaniStats"
       }
   });
-    
 
 
-window.chatbaseConfig = {
+  /*window.chatbaseConfig = {
     chatbotId: "cy2o6ilqRZeNoeiKkVhh8",
   };
-  
+
   window.addEventListener("load", () => {
     const script = document.createElement("script");
     script.src = "https://www.chatbase.co/embed.min.js";
     script.defer = true;
     script.setAttribute("chatbotId", "cy2o6ilqRZeNoeiKkVhh8");
     document.body.appendChild(script);
+  });*/
+
+  const toggleBtn = document.getElementById("chatbot-toggle");
+  const chatbot = document.getElementById("chatbot-container");
+
+  toggleBtn.addEventListener("click", () => {
+    chatbot.style.display = chatbot.style.display === "none" ? "block" : "none";
   });
 
   $(document).ready(function () {
     // Get today's date and subtract 1 day
     const now = new Date();
     now.setDate(now.getDate() - 1); // backdate by 1 day
-  
+
     const options = {
       day: '2-digit',
       month: 'short',
       year: 'numeric',
     };
-  
+
     const formattedDate = now.toLocaleDateString('en-GB', options);
-  
+
     // Set text with fixed time
     $('#data-date').text(`Data as of ${formattedDate}, 23:59`);
   });
-  
+
 
   $(document).ready(function() {
     function adjustCarousel() {
@@ -395,7 +401,7 @@ window.chatbaseConfig = {
   document.addEventListener("DOMContentLoaded", function () {
     // Set the current language (can be dynamic, e.g., based on user preference or browser settings)
     let currentLanguage = 'en';  // Switch to 'my' for Malay
-  
+
     const dataRows = [
       ["bi-clipboard-data", "text-success", "totalHoldings", "1,011,503", "ss1"],
       ["bi-person-badge", "text-success", "totalFarmers", "991,257", "ss2"],
@@ -409,19 +415,19 @@ window.chatbaseConfig = {
 
     const container = document.getElementById("glance-cards-container");
     if (!container) return;
-  
+
     container.innerHTML = ""; // Clear any existing content
-  
+
     dataRows.forEach(([icon, color, labelKey, valueRaw, date], index) => {
       let value = valueRaw.replace(/,/g, "");
-  
+
       // If it's a number (excluding "Years" or other units), format it
       if (value.includes("Years") || value.includes("%") || isNaN(value)) {
         value = valueRaw;
       } else {
         value = parseFloat(value).toLocaleString();
       }
-  
+
       if (value && value.trim() !== "") {
         const card = document.createElement("div");
         card.className = "glance-card col";
@@ -439,6 +445,6 @@ window.chatbaseConfig = {
       }
     });
   });
-  
+
 
 })(jQuery);
