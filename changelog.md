@@ -74,12 +74,12 @@
 * Cleaned up dark mode theme.
 * Extended language switcher support.
 * Optimized gtag script to track all user interactions.
-* Introduced chatbot (v1) with supporting script.
+* Introduced chatbot(AgroBot) with supporting script.
 * General bug fixes.
 
 #### v2.1.1
 
-* Updated chatbot to version 1.2.
+* Improved chatbot(AgroBot) performance with a more refined and responsive model (replacing the previous version).
 * Replaced all Power BI embeds with updated visualizations.
 * Changed background to a custom image.
 
@@ -115,3 +115,17 @@
 * Fixed light mode inheriting styles from dark mode in specific elements.
 * Improved page response time.
 * All buttons now consistently use a shared global CSS style.
+* Add socmed href in left-footer
+
+#### v2.4
+* Revamped sidebar with a more modern look and responsive design
+* Optimized dark mode compatibility for the new sidebar
+* Fixed EN/MY article download issue
+* Added CitraTani button in the navbar
+* Removed TaniFacts, myAgroChain, and myAgroPrice buttons — moved into CitraTani dropdown
+* Optimized all scripts for better performance
+
+#### v2.4.1
+* All image is replaced with a new images (with licence)
+* Page-up button is added with script
+* All resource such as image size is reduced to optimized and minimalize lag issues.
