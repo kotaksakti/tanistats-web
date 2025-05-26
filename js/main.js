@@ -29,7 +29,7 @@
           home: "Home",
           d_explorer: "TableFlex",
           d_request: "Data Request",
-          logo_title:"&nbsp&nbspIntegrated Agricultural Statistical System",
+          logo_title:"Integrated Agricultural Statistical System",
           title: "Integrated Agricultural Statistical System (TaniStats):",
           subtitle: "Integrated Data, Sustainable Agriculture, Secured Food Supply",
           description: 'The <strong>Integrated Agricultural Statistical System(TaniStats)</strong> is a centralized digital system that organizes and simplifies agricultural data. It brings together information from different sources, making it easier to monitor, analyze, and plan for a stronger and more sustainable agricultural sector.',
