@@ -341,51 +341,50 @@
     }
   });
 
-  // //with html//
-  // $(document).ready(function () {
-  //   // Normalize current path: lowercase, strip trailing slash and .html
-  //   let currentPath = window.location.pathname.toLowerCase()
-  //     .replace(/\/$/, "")         // remove trailing slash
-  //     .replace(/\.html$/, "")     // remove .html from end
+  $(document).ready(function () {
+    // Normalize current path: lowercase, strip trailing slash and .html
+     let currentPath = window.location.pathname.toLowerCase()
+      .replace(/\/$/, "")         // remove trailing slash
+       .replace(/\.html$/, "")     // remove .html from end
 
-  //   console.log("Current path:", currentPath);
+     console.log("Current path:", currentPath);
 
-  //   $(".navbar-nav .nav-link").removeClass("active");
+     $(".navbar-nav .nav-link").removeClass("active");
 
-  //   $(".navbar-nav .nav-link").each(function () {
-  //     let menuItem = $(this);
-  //     let menuHref = menuItem.attr("href");
-  //     if (!menuHref) return;
+    $(".navbar-nav .nav-link").each(function () {
+       let menuItem = $(this);
+       let menuHref = menuItem.attr("href");
+       if (!menuHref) return;
 
-  //     // Normalize href: lowercase, strip trailing slash and .html
-  //     menuHref = menuHref.toLowerCase()
-  //       .replace(/\/$/, "")
-  //       .replace(/\.html$/, ""); // generalized .html removal
+       // Normalize href: lowercase, strip trailing slash and .html
+       menuHref = menuHref.toLowerCase()
+         .replace(/\/$/, "")
+         .replace(/\.html$/, ""); // generalized .html removal
 
-  //     console.log("Checking menuHref:", menuHref);
+       console.log("Checking menuHref:", menuHref);
 
-  //     if (currentPath.endsWith(menuHref)) {
-  //       menuItem.addClass("active");
-  //     }
-  //   });
+       if (currentPath.endsWith(menuHref)) {
+         menuItem.addClass("active");
+       }
+     });
 
-  //   // Optional dropdown highlight
-  //   // let citraTaniPages = [
-  //   //   "tanifacts",
-  //   //   "overview_tanifacts",
-  //   //   "crops",
-  //   //   "livestock",
-  //   //   "fisheries",
-  //   //   "aquaculture",
-  //   //   "forest",
-  //   //   "agroprice",
-  //   //   "agrochain"
-  //   // ];
+    // Optional dropdown highlight
+    let citraTaniPages = [
+      "tanifacts",
+      "overview_tanifacts",
+      "crops",
+      "livestock",
+      "fisheries",
+      "aquaculture",
+      "forest",
+      "agroprice",
+      "agrochain"
+    ];
 
-  //   if (citraTaniPages.some(page => currentPath.endsWith(page))) {
-  //     $("#tanifactsDropdown").addClass("active");
-  //   }
-  // });
+    if (citraTaniPages.some(page => currentPath.endsWith(page))) {
+      $("#tanifactsDropdown").addClass("active");
+    }
+  });
 
 /* window.chatbaseConfig = {
   chatbotId: "cy2o6ilqRZeNoeiKkVhh8",
