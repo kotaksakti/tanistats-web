@@ -25,16 +25,16 @@
   // ================= Language Translation =================
   const translations = {
       en: {
-          headline_text:"📢 Malaysia Statistical Agriculture Registry (TaniStats) Launches New Dashboard! &nbsp;&nbsp;&nbsp; 🌱 Explore TaniStats Today! &nbsp;&nbsp;&nbsp; 🚜 Support Sustainable Agriculture Through Data!",
+          headline_text:"📢 Integrated Agricultural Statistical System (TaniStats) Launches New Dashboard! &nbsp;&nbsp;&nbsp; 🌱 Explore TaniStats Today! &nbsp;&nbsp;&nbsp; 🚜 Support Sustainable Agriculture Through Data!",
           home: "Home",
           d_explorer: "TableFlex",
           d_request: "Data Request",
-          logo_title:"Malaysia Statistical Agriculture Registry",
-          title: "Malaysia Statistical Agriculture Registry (TaniStats):",
+          logo_title:"&nbsp&nbspIntegrated Agricultural Statistical System",
+          title: "Integrated Agricultural Statistical System (TaniStats):",
           subtitle: "Integrated Data, Sustainable Agriculture, Secured Food Supply",
-          description: 'The <strong>Malaysia Statistical Agriculture Registry (TaniStats)</strong> is a centralized digital system that organizes and simplifies agricultural data. It brings together information from different sources, making it easier to monitor, analyze, and plan for a stronger and more sustainable agricultural sector.',
+          description: 'The <strong>Integrated Agricultural Statistical System(TaniStats)</strong> is a centralized digital system that organizes and simplifies agricultural data. It brings together information from different sources, making it easier to monitor, analyze, and plan for a stronger and more sustainable agricultural sector.',
           faq_question_1:"What is TaniStats?",
-          body_msagr:"The <strong>Malaysia Statistical Agriculture Registry (TaniStats)</strong> is a centralized data platform that integrates and synchronizes Malaysia’s agricultural data across multiple agencies and institutions. Developed in conjunction with the 2024 Agriculture Census, TaniStats combines census data, administrative records, and real-time agricultural information into a single, unified system.<br><br> By merging various datasets—ranging from farmer demographics, crop production, and land use to supply chain data and market trends—TaniStats eliminates data silos, ensuring accurate, updated, and readily accessible information. This integrated approach enables policymakers, researchers, and industry players to make informed, data-driven decisions that enhance the sector’s productivity, efficiency, and sustainability.",
+          body_msagr:"The <strong>Integrated Agricultural Statistical System(TaniStats)</strong> is a centralized data platform that integrates and synchronizes Malaysia’s agricultural data across multiple agencies and institutions. Developed in conjunction with the 2024 Agriculture Census, TaniStats combines census data, administrative records, and real-time agricultural information into a single, unified system.<br><br> By merging various datasets—ranging from farmer demographics, crop production, and land use to supply chain data and market trends—TaniStats eliminates data silos, ensuring accurate, updated, and readily accessible information. This integrated approach enables policymakers, researchers, and industry players to make informed, data-driven decisions that enhance the sector’s productivity, efficiency, and sustainability.",
           faq_question_2:"Why was TaniStats developed?",
           q2_a:"For years, Malaysia’s agricultural sector has faced challenges due to fragmented and decentralized data. The last Agricultural Census was conducted in 2005, resulting in significant information gaps that hinder effective policy planning and resource allocation. Additionally, agricultural data managed by various agencies has often been used and handled in silos, making it more difficult to formulate comprehensive and sustainable development strategies. <br>To address these challenges, TaniStats was developed with the following key objectives:",
           q2_b:"Integrating Data – Unifying various sources of agricultural data into a single, easily accessible platform.",
@@ -97,7 +97,7 @@
           menu_agro_overview: "AgroChain Overview",
           title_crops: "Crops",
           h5_footer:"DEPARTMENT OF STATISTICS MALAYSIA",
-          p_footer:"© 2025 Malaysia Statistical Agriculture Registry",
+          p_footer:"© 2025 Integrated Agricultural Statistical System",
           about: "About Us",
           contact: "Contact Us",
           totalHoldings: "<strong>Overall</strong>",
@@ -111,25 +111,25 @@
           ss1: "(<strong>2024</strong>)",
           ss2: "(<strong>98.0%</strong> of total individual agricultural holdings)",
           ss3: "(<strong>2.0%</strong> of total agricultural establishment)",
-          ss4: "(<strong>28.7%</strong> of total individual agricultural holdings)",
-          ss5: "(<strong>8.2%</strong> of total individual agricultural holdings)",
-          ss6: "(<strong>44.6%</strong> of total individual agricultural holdings)",
-          ss7: "(<strong>4.9%</strong> of total individual agricultural holdings)",
+          ss4: "(<strong>25%</strong> of total individual agricultural holdings)",
+          ss5: "(<strong>13.3%</strong> of total individual agricultural holdings)",
+          ss6: "(<strong>45.5%</strong> of total individual agricultural holdings)",
+          ss7: "(<strong>2.9%</strong> of total individual agricultural holdings)",
           ss8: "(<strong>2024</strong>)"
           
           
       },
       my: {
-          headline_text:"📢 Pangkalan Data Statistik Pertanian Bersepadu (TaniStats) Melancarkan Dashboard Baharu! &nbsp;&nbsp;&nbsp; 🌱 Teroka TaniStats Hari Ini! &nbsp;&nbsp;&nbsp; 🚜 Sokong Pertanian Lestari Melalui Data!",
+          headline_text:"📢 Sistem Statistik Pertanian Bersepadu (TaniStats) Melancarkan Dashboard Baharu! &nbsp;&nbsp;&nbsp; 🌱 Teroka TaniStats Hari Ini! &nbsp;&nbsp;&nbsp; 🚜 Sokong Pertanian Lestari Melalui Data!",
           home: "Utama",
           d_explorer: "TableFlex",
           d_request: "Permintaan Data",
-          logo_title:"Pangkalan Data Statistik Pertanian Bersepadu",
-          title: "Pangkalan Data Statistik Pertanian Bersepadu (TaniStats):",
+          logo_title:"&nbsp&nbsp&nbsp&nbspSistem Statistik Pertanian Bersepadu",
+          title: "Sistem Statistik Pertanian Bersepadu (TaniStats):",
           subtitle: "Data Bersepadu, Pertanian Mampan, Bekalan Makanan Terjamin",
-          description: "<strong>Pangkalan Data Statistik Pertanian Bersepadu (TaniStats)</strong> ialah sistem digital berpusat yang mengatur dan memudahkan data pertanian. Ia mengumpulkan maklumat dari pelbagai sumber, menjadikannya lebih mudah untuk memantau, menganalisis, dan merancang sektor pertanian yang lebih kukuh dan mampan.",
+          description: "<strong>Sistem Statistik Pertanian Bersepadu (TaniStats)</strong> ialah sistem digital berpusat yang mengatur dan memudahkan data pertanian. Ia mengumpulkan maklumat dari pelbagai sumber, menjadikannya lebih mudah untuk memantau, menganalisis, dan merancang sektor pertanian yang lebih kukuh dan mampan.",
           faq_question_1:"Apa itu TaniStats?",
-          body_msagr:"<strong>Pangkalan Data Statistik Pertanian Bersepadu (TaniStats)</strong> ialah satu platform data berpusat yang mengintegrasikan dan menyelaraskan maklumat pertanian Malaysia merentasi pelbagai agensi kerajaan. Sistem ini dibangunkan berasaskan dapatan Banci Pertanian 2024 serta menggabungkan pelbagai maklumat rasmi sektor pertanian ke dalam satu sistem bersepadu. <br><br> Dengan menghimpunkan pelbagai set data – termasuk profil petani, hasil tanaman, penggunaan tanah, rantaian bekalan, dan trend pasaran – TaniStats menghapuskan silo maklumat dan memastikan data yang lebih tepat, terkini, dan mudah diakses. Melalui pendekatan ini, TaniStats membolehkan penggubal dasar, penyelidik, dan pemain industri membuat keputusan lebih bijak berasaskan data yang kukuh, sekaligus mempertingkatkan produktiviti, kecekapan, dan daya tahan sektor pertanian.",
+          body_msagr:"<strong>Sistem Statistik Pertanian Bersepadu (TaniStats)</strong> ialah satu platform data berpusat yang mengintegrasikan dan menyelaraskan maklumat pertanian Malaysia merentasi pelbagai agensi kerajaan. Sistem ini dibangunkan berasaskan dapatan Banci Pertanian 2024 serta menggabungkan pelbagai maklumat rasmi sektor pertanian ke dalam satu sistem bersepadu. <br><br> Dengan menghimpunkan pelbagai set data – termasuk profil petani, hasil tanaman, penggunaan tanah, rantaian bekalan, dan trend pasaran – TaniStats menghapuskan silo maklumat dan memastikan data yang lebih tepat, terkini, dan mudah diakses. Melalui pendekatan ini, TaniStats membolehkan penggubal dasar, penyelidik, dan pemain industri membuat keputusan lebih bijak berasaskan data yang kukuh, sekaligus mempertingkatkan produktiviti, kecekapan, dan daya tahan sektor pertanian.",
           faq_question_2:"Mengapa TaniStats dibangunkan?",
           q2_a:"Selama bertahun-tahun, sektor pertanian Malaysia berdepan cabaran data yang tidak seragam dan tidak berpusat. Kali terakhir Banci Pertanian dijalankan adalah pada 2005, menyebabkan jurang maklumat yang menyukarkan perancangan dasar dan pengagihan sumber secara berkesan. Selain itu, data pertanian yang dikendalikan oleh pelbagai agensi sering digunakan dan diurus secara silo, menjadikan usaha menyusun strategi pembangunan mampan lebih mencabar. <br> Untuk mengatasi cabaran ini, TaniStats dibangunkan dengan objektif utama berikut:",
           q2_b:"Mengintegrasikan Data – Menyatukan pelbagai sumber data pertanian ke dalam satu platform yang mudah diakses.",
@@ -192,7 +192,7 @@
           menu_agro_overview: "AgroChain Overview",
           title_crops: "Tanaman",
           h5_footer:"JABATAN PERANGKAAN MALAYSIA",
-          p_footer:"© 2025 Pangkalan Data Statistik Pertanian Bersepadu",
+          p_footer:"© 2025 Sistem Statistik Pertanian Bersepadu",
           about: "Tentang Kami",
           contact: "Hubungi Kami",
           totalHoldings: "<strong>Keseluruhan</strong>",
@@ -201,15 +201,15 @@
           femaleFarmers: "<strong>Individu Milikan Wanita</strong>",
           youngFarmers: "<strong>Individu Milikan Belia</strong>",
           seniorFarmers: "⁠⁠<strong>Individu Milikan Warga Emas <br> (>60 tahun)</strong>",
-          foreignInvolvement: "<strong>Individu Warga Asing</strong>",
+          foreignInvolvement: "<strong>Penglibatan Warga Asing</strong>",
           avgAge: "<strong>Purata Umur Individu <br> (Tahun)</strong>",
           ss1: "(<strong>2024</strong>)",
           ss2: "(<strong>98.0%</strong> daripada jumlah pegangan pertanian individu)",
           ss3: "(<strong>2.0%</strong> daripada jumlah pegangan pertanian pertubuhan)",
-          ss4: "(<strong>28.7%</strong> daripada jumlah pegangan pertanian individu)",
-          ss5: "(<strong>8.2%</strong> daripada jumlah pegangan pertanian individu)",
-          ss6: "(<strong>44.6%</strong> daripada jumlah pegangan pertanian individu)",
-          ss7: "(<strong>4.9%</strong> daripada jumlah pegangan pertanian individu)",
+          ss4: "(<strong>25%</strong> daripada jumlah pegangan pertanian individu)",
+          ss5: "(<strong>13.3%</strong> daripada jumlah pegangan pertanian individu)",
+          ss6: "(<strong>45.5%</strong> daripada jumlah pegangan pertanian individu)",
+          ss7: "(<strong>2.9%</strong> daripada jumlah pegangan pertanian individu)",
           ss8: "(<strong>2024</strong>)"
       }
   };
@@ -319,18 +319,20 @@
       }
     });
   
-    // // Define pages that belong to CitraTani dropdown
-    // let citraTaniPages = [
-    //   "/tanifacts",
-    //   "/overview_tanifacts",
-    //   "/crops",
-    //   "/livestock",
-    //   "/fisheries",
-    //   "/aquaculture",
-    //   "/forest",
-    //   "/agroprice",
-    //   "/agrochain"
-    // ];
+    // Define pages that belong to CitraTani dropdown
+    let citraTaniPages = [
+      "/tanifacts",
+      "/overview_tanifacts",
+      "/crops",
+      "/livestock",
+      "/fisheries",
+      "/aquaculture",
+      "/forest",
+      "/agroprice",
+      "/agrochain",
+      "/myfoodstats"
+
+    ];
   
     // If currentPath starts with any of these, highlight the dropdown toggle (#tanifactsDropdown)
     if (citraTaniPages.some(page => currentPath.startsWith(page))) {
@@ -454,14 +456,14 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentLanguage = 'en';  // Switch to 'my' for Malay
 
   const dataRows = [
-    ["bi-clipboard-data", "text-success", "totalHoldings", "1,011,503", "ss1"],
-    ["bi-person-badge", "text-success", "totalFarmers", "991,257", "ss2"],
-    ["bi-buildings", "text-warning", "totalCompanies", "20,246", "ss3"],
-    ["bi-gender-female", "text-danger", "femaleFarmers", "284,894", "ss4"],
-    ["bi-gender-ambiguous", "text-secondary", "youngFarmers", "81,579", "ss5"],
-    ["bi-person", "text-info", "seniorFarmers", "441,893", "ss6"],
-    ["bi-globe2", "text-primary", "foreignInvolvement", "48,212", "ss7"],
-    ["bi-bar-chart-line", "text-success", "avgAge", "56.4", "ss8"]
+    ["bi-clipboard-data", "text-success", "totalHoldings", "1,018,858", "ss1"],
+    ["bi-person-badge", "text-success", "totalFarmers", "998,017", "ss2"],
+    ["bi-buildings", "text-warning", "totalCompanies", "20,841", "ss3"],
+    ["bi-gender-female", "text-danger", "femaleFarmers", "249,617", "ss4"],
+    ["bi-gender-ambiguous", "text-secondary", "youngFarmers", "135,683", "ss5"],
+    ["bi-person", "text-info", "seniorFarmers", "453,845", "ss6"],
+    ["bi-globe2", "text-primary", "foreignInvolvement", "29,604", "ss7"],
+    ["bi-bar-chart-line", "text-success", "avgAge", "56.7", "ss8"]
   ];
 
   const container = document.getElementById("glance-cards-container");
