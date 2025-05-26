@@ -116,8 +116,8 @@
           ss6: "(<strong>45.5%</strong> of total individual agricultural holdings)",
           ss7: "(<strong>2.9%</strong> of total individual agricultural holdings)",
           ss8: "(<strong>2024</strong>)"
-          
-          
+
+
       },
       my: {
           headline_text:"📢 Sistem Statistik Pertanian Bersepadu (TaniStats) Melancarkan Dashboard Baharu! &nbsp;&nbsp;&nbsp; 🌱 Teroka TaniStats Hari Ini! &nbsp;&nbsp;&nbsp; 🚜 Sokong Pertanian Lestari Melalui Data!",
@@ -227,10 +227,10 @@
               }
           }
       });
-  
+
       // ✅ Store selected language in localStorage
       localStorage.setItem("lang", lang);
-  
+
       // ✅ Update button styles (EN / MY)
       if (lang === "my") {
           $("#myLang").addClass("bg-primary text-white").removeClass("bg-light text-dark");
@@ -239,7 +239,7 @@
           $("#enLang").addClass("bg-primary text-white").removeClass("bg-light text-dark");
           $("#myLang").addClass("bg-light text-dark").removeClass("bg-primary text-white");
       }
-  
+
       // ✅ Update iframe for the current page
       $("iframe[data-page]").each(function () {
           let newSrc = lang === "my" ? $(this).attr("data-my") : $(this).attr("data-en");
@@ -252,12 +252,12 @@
           $(this).attr("href", newHref);
       });
   }
-  
+
   // ✅ Load stored language on page load
   $(document).ready(function () {
       let storedLang = localStorage.getItem("lang") || "en";
       changeLanguage(storedLang);
-  
+
       $("#enLang, #myLang").click(function (e) {
           e.preventDefault();
           let selectedLang = $(this).attr("id") === "myLang" ? "my" : "en";
@@ -271,7 +271,7 @@
       switchIframeSrcForMobile(currentLang);
     });
   });
-    
+
 
   // ================= Dark Mode Functionality =================
   function enableDarkMode() {
@@ -301,10 +301,10 @@
   $(document).ready(function () {
     let currentPath = window.location.pathname.toLowerCase().replace(/\/$/, ""); // Remove trailing slash
     console.log("Current path:", currentPath); // Debugging
-  
+
     // Reset active classes on all nav links
     $(".navbar-nav .nav-link").removeClass("active");
-  
+
     // Highlight exact page links
     $(".navbar-nav .nav-link").each(function () {
       let menuItem = $(this);
@@ -312,13 +312,13 @@
       if (!menuHref) return; // Skip if no href
       menuHref = menuHref.toLowerCase().replace(/\/$/, "");
       console.log("Checking menuHref:", menuHref);
-  
+
       // If current path exactly matches link href, highlight it
       if (currentPath === menuHref) {
         menuItem.addClass("active");
       }
     });
-  
+
     // Define pages that belong to CitraTani dropdown
     let citraTaniPages = [
       "/tanifacts",
@@ -333,7 +333,7 @@
       "/myfoodstats"
 
     ];
-  
+
     // If currentPath starts with any of these, highlight the dropdown toggle (#tanifactsDropdown)
     if (citraTaniPages.some(page => currentPath.startsWith(page))) {
       console.log("CitraTani dropdown active");
@@ -347,28 +347,28 @@
   //   let currentPath = window.location.pathname.toLowerCase()
   //     .replace(/\/$/, "")         // remove trailing slash
   //     .replace(/\.html$/, "")     // remove .html from end
-  
+
   //   console.log("Current path:", currentPath);
-  
+
   //   $(".navbar-nav .nav-link").removeClass("active");
-  
+
   //   $(".navbar-nav .nav-link").each(function () {
   //     let menuItem = $(this);
   //     let menuHref = menuItem.attr("href");
   //     if (!menuHref) return;
-  
+
   //     // Normalize href: lowercase, strip trailing slash and .html
   //     menuHref = menuHref.toLowerCase()
   //       .replace(/\/$/, "")
   //       .replace(/\.html$/, ""); // generalized .html removal
-  
+
   //     console.log("Checking menuHref:", menuHref);
-  
+
   //     if (currentPath.endsWith(menuHref)) {
   //       menuItem.addClass("active");
   //     }
   //   });
-  
+
   //   // Optional dropdown highlight
   //   // let citraTaniPages = [
   //   //   "tanifacts",
@@ -381,15 +381,13 @@
   //   //   "agroprice",
   //   //   "agrochain"
   //   // ];
-  
+
   //   if (citraTaniPages.some(page => currentPath.endsWith(page))) {
   //     $("#tanifactsDropdown").addClass("active");
   //   }
   // });
-  
-  
 
-window.chatbaseConfig = {
+/* window.chatbaseConfig = {
   chatbotId: "cy2o6ilqRZeNoeiKkVhh8",
 };
 
@@ -399,6 +397,33 @@ window.addEventListener("load", () => {
   script.defer = true;
   script.setAttribute("chatbotId", "cy2o6ilqRZeNoeiKkVhh8");
   document.body.appendChild(script);
+}); */
+
+window.copilotChatConfig = {
+  buttonSrc: "https://backend.chatbase.co/storage/v1/object/public/chat-icons/4c5502be-6173-4a25-affc-11a7c7f4a6b6/NayFwE8gl8kgDuXaZoh3n.jpg",
+  iframeSrc: "https://copilotstudio.microsoft.com/environments/Default-373e90d2-d9a3-43b5-832e-c8e9847a79f8/bots/cr145_taniStatsChatbot/webchat?__version__=2",
+};
+
+window.addEventListener("load", () => {
+  const copilotIframe = document.createElement("iframe");
+  copilotIframe.setAttribute("id", "chatbot-container");
+  copilotIframe.setAttribute("src", window.copilotChatConfig.iframeSrc);
+  copilotIframe.setAttribute("frameborder", "0");
+  document.body.appendChild(copilotIframe);
+
+  const copilotButtonImage = document.createElement("img");
+  copilotButtonImage.setAttribute("src", window.copilotChatConfig.buttonSrc);
+  copilotButtonImage.setAttribute("alt", "Chatbot");
+
+  const copilotButton = document.createElement("button");
+  copilotButton.setAttribute("id", "chatbot-toggle");
+  copilotButton.appendChild(copilotButtonImage);
+
+  copilotButton.addEventListener("click", () => {
+    copilotIframe.style.display = copilotIframe.style.display === "none" ? "block" : "none";
+  });
+
+  document.body.appendChild(copilotButton);
 });
 
 // $(document).ready(function () {
