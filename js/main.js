@@ -124,7 +124,7 @@
           home: "Utama",
           d_explorer: "TableFlex",
           d_request: "Permintaan Data",
-          logo_title:"&nbsp&nbsp&nbsp&nbspSistem Statistik Pertanian Bersepadu",
+          logo_title:"Sistem Statistik Pertanian Bersepadu",
           title: "Sistem Statistik Pertanian Bersepadu (TaniStats):",
           subtitle: "Data Bersepadu, Pertanian Mampan, Bekalan Makanan Terjamin",
           description: "<strong>Sistem Statistik Pertanian Bersepadu (TaniStats)</strong> ialah sistem digital berpusat yang mengatur dan memudahkan data pertanian. Ia mengumpulkan maklumat dari pelbagai sumber, menjadikannya lebih mudah untuk memantau, menganalisis, dan merancang sektor pertanian yang lebih kukuh dan mampan.",
