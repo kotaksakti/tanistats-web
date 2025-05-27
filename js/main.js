@@ -108,14 +108,14 @@
           seniorFarmers: "<strong>Senior-Owned Individual <br> (>60 years)</strong>",
           foreignInvolvement: "<strong>Foreign Individual</strong>",
           avgAge: "<strong>Average Age of Individual <br> (Years)</strong>",
-          ss1: "(Reference Data <strong>2023</strong>)",
+          ss1: "(<strong>2023</strong> Reference Data)",
           ss2: "(<strong>97.9%</strong> of total individual agricultural holdings)",
           ss3: "(<strong>2.1%</strong> of total agricultural establishment)",
           ss4: "(<strong>25.3%</strong> of total individual agricultural holdings)",
           ss5: "(<strong>13.9%</strong> of total individual agricultural holdings)",
           ss6: "(<strong>45.4%</strong> of total individual agricultural holdings)",
           ss7: "(<strong>2.9%</strong> of total individual agricultural holdings)",
-          ss8: "(Reference Data <strong>2023</strong>)"
+          ss8: "(<strong>2023</strong> Reference Data)"
 
 
       },
