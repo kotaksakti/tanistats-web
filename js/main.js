@@ -108,14 +108,14 @@
           seniorFarmers: "<strong>Senior-Owned Individual <br> (>60 years)</strong>",
           foreignInvolvement: "<strong>Foreign Individual</strong>",
           avgAge: "<strong>Average Age of Individual <br> (Years)</strong>",
-          ss1: "(<strong>2024</strong>)",
+          ss1: "(Reference Data <strong>2023</strong>)",
           ss2: "(<strong>97.9%</strong> of total individual agricultural holdings)",
           ss3: "(<strong>2.1%</strong> of total agricultural establishment)",
-          ss4: "(<strong>25.5%</strong> of total individual agricultural holdings)",
-          ss5: "(<strong>13.6%</strong> of total individual agricultural holdings)",
-          ss6: "(<strong>45.7%</strong> of total individual agricultural holdings)",
+          ss4: "(<strong>25.3%</strong> of total individual agricultural holdings)",
+          ss5: "(<strong>13.9%</strong> of total individual agricultural holdings)",
+          ss6: "(<strong>45.4%</strong> of total individual agricultural holdings)",
           ss7: "(<strong>2.9%</strong> of total individual agricultural holdings)",
-          ss8: "(<strong>2024</strong>)"
+          ss8: "(Reference Data <strong>2023</strong>)"
 
 
       },
@@ -203,14 +203,14 @@
           seniorFarmers: "⁠⁠<strong>Individu Milikan Warga Emas <br> (>60 tahun)</strong>",
           foreignInvolvement: "<strong>Penglibatan Warga Asing</strong>",
           avgAge: "<strong>Purata Umur Individu <br> (Tahun)</strong>",
-          ss1: "(<strong>2024</strong>)",
+          ss1: "(Data Rujukan <strong>2023</strong>)",
           ss2: "(<strong>97.9%</strong> daripada jumlah pegangan pertanian individu)",
           ss3: "(<strong>2.1%</strong> daripada jumlah pegangan pertanian pertubuhan)",
-          ss4: "(<strong>25.5%</strong> daripada jumlah pegangan pertanian individu)",
-          ss5: "(<strong>13.6%</strong> daripada jumlah pegangan pertanian individu)",
-          ss6: "(<strong>45.7%</strong> daripada jumlah pegangan pertanian individu)",
+          ss4: "(<strong>25.3%</strong> daripada jumlah pegangan pertanian individu)",
+          ss5: "(<strong>13.9%</strong> daripada jumlah pegangan pertanian individu)",
+          ss6: "(<strong>45.4%</strong> daripada jumlah pegangan pertanian individu)",
           ss7: "(<strong>2.9%</strong> daripada jumlah pegangan pertanian individu)",
-          ss8: "(<strong>2024</strong>)"
+          ss8: "(Data Rujukan <strong>2023</strong>)"
       }
   };
 
@@ -481,14 +481,14 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentLanguage = 'en';  // Switch to 'my' for Malay
 
   const dataRows = [
-    ["bi-clipboard-data", "text-success", "totalHoldings", "1,023,534", "ss1"],
-    ["bi-person-badge", "text-success", "totalFarmers", "1,002,343", "ss2"],
+    ["bi-clipboard-data", "text-success", "totalHoldings", "1,030,020", "ss1"],
+    ["bi-person-badge", "text-success", "totalFarmers", "1,008,829", "ss2"],
     ["bi-buildings", "text-warning", "totalCompanies", "21,191", "ss3"],
-    ["bi-gender-female", "text-danger", "femaleFarmers", "255,296", "ss4"],
-    ["bi-gender-ambiguous", "text-secondary", "youngFarmers", "139,010", "ss5"],
-    ["bi-person", "text-info", "seniorFarmers", "457,606", "ss6"],
-    ["bi-globe2", "text-primary", "foreignInvolvement", "29,591", "ss7"],
-    ["bi-bar-chart-line", "text-success", "avgAge", "56.6", "ss8"]
+    ["bi-gender-female", "text-danger", "femaleFarmers", "255,690", "ss4"],
+    ["bi-gender-ambiguous", "text-secondary", "youngFarmers", "142,888", "ss5"],
+    ["bi-person", "text-info", "seniorFarmers", "458,263", "ss6"],
+    ["bi-globe2", "text-primary", "foreignInvolvement", "29,594", "ss7"],
+    ["bi-bar-chart-line", "text-success", "avgAge", "56.5", "ss8"]
   ];
 
   const container = document.getElementById("glance-cards-container");
