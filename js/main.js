@@ -409,83 +409,67 @@ window.addEventListener("load", () => {
   document.body.appendChild(script);
 }); */
 
-  //  (function () {
-  //   if (!window.chatbase || window.chatbase("getState") !== "initialized") {
-  //     window.chatbase = (...args) => {
-  //       if (!window.chatbase.q) {
-  //         window.chatbase.q = [];
-  //       }
-  //       window.chatbase.q.push(args);
-  //     };
+   (function () {
+    if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+      window.chatbase = (...args) => {
+        if (!window.chatbase.q) {
+          window.chatbase.q = [];
+        }
+        window.chatbase.q.push(args);
+      };
   
-  //     window.chatbase = new Proxy(window.chatbase, {
-  //       get(target, prop) {
-  //         if (prop === "q") {
-  //           return target.q;
-  //         }
-  //         return (...args) => target(prop, ...args);
-  //       },
-  //     });
-  //   }
+      window.chatbase = new Proxy(window.chatbase, {
+        get(target, prop) {
+          if (prop === "q") {
+            return target.q;
+          }
+          return (...args) => target(prop, ...args);
+        },
+      });
+    }
   
-  //   const onLoad = function () {
-  //     const script = document.createElement("script");
-  //     script.src = "https://www.chatbase.co/embed.min.js";
-  //     script.id = "cy2o6ilqRZeNoeiKkVhh8";
-  //     script.domain = "www.chatbase.co";
-  //     document.body.appendChild(script);
-  //   };
+    const onLoad = function () {
+      const script = document.createElement("script");
+      script.src = "https://www.chatbase.co/embed.min.js";
+      script.id = "cy2o6ilqRZeNoeiKkVhh8";
+      script.domain = "www.chatbase.co";
+      document.body.appendChild(script);
+    };
   
-  //   if (document.readyState === "complete") {
-  //     onLoad();
-  //   } else {
-  //     window.addEventListener("load", onLoad);
-  //   }
-  // })(); 
+    if (document.readyState === "complete") {
+      onLoad();
+    } else {
+      window.addEventListener("load", onLoad);
+    }
+  })(); 
 
-window.copilotChatConfig = {
-  buttonSrc: "https://backend.chatbase.co/storage/v1/object/public/chat-icons/4c5502be-6173-4a25-affc-11a7c7f4a6b6/NayFwE8gl8kgDuXaZoh3n.jpg",
-  iframeSrc: "https://copilotstudio.microsoft.com/environments/Default-373e90d2-d9a3-43b5-832e-c8e9847a79f8/bots/cr145_taniStatsChatbot/webchat?__version__=2",
-};
+// window.copilotChatConfig = {
+//   buttonSrc: "https://backend.chatbase.co/storage/v1/object/public/chat-icons/4c5502be-6173-4a25-affc-11a7c7f4a6b6/NayFwE8gl8kgDuXaZoh3n.jpg",
+//   iframeSrc: "https://copilotstudio.microsoft.com/environments/Default-373e90d2-d9a3-43b5-832e-c8e9847a79f8/bots/cr145_taniStatsChatbot/webchat?__version__=2",
+// };
 
-window.addEventListener("load", () => {
-  const copilotIframe = document.createElement("iframe");
-  copilotIframe.setAttribute("id", "chatbot-container");
-  copilotIframe.setAttribute("src", window.copilotChatConfig.iframeSrc);
-  copilotIframe.setAttribute("frameborder", "0");
-  document.body.appendChild(copilotIframe);
+// window.addEventListener("load", () => {
+//   const copilotIframe = document.createElement("iframe");
+//   copilotIframe.setAttribute("id", "chatbot-container");
+//   copilotIframe.setAttribute("src", window.copilotChatConfig.iframeSrc);
+//   copilotIframe.setAttribute("frameborder", "0");
+//   document.body.appendChild(copilotIframe);
 
-  const copilotButtonImage = document.createElement("img");
-  copilotButtonImage.setAttribute("src", window.copilotChatConfig.buttonSrc);
-  copilotButtonImage.setAttribute("alt", "Chatbot");
+//   const copilotButtonImage = document.createElement("img");
+//   copilotButtonImage.setAttribute("src", window.copilotChatConfig.buttonSrc);
+//   copilotButtonImage.setAttribute("alt", "Chatbot");
 
-  const copilotButton = document.createElement("button");
-  copilotButton.setAttribute("id", "chatbot-toggle");
-  copilotButton.appendChild(copilotButtonImage);
+//   const copilotButton = document.createElement("button");
+//   copilotButton.setAttribute("id", "chatbot-toggle");
+//   copilotButton.appendChild(copilotButtonImage);
 
-  copilotButton.addEventListener("click", () => {
-    copilotIframe.style.display = copilotIframe.style.display === "none" ? "block" : "none";
-  });
+//   copilotButton.addEventListener("click", () => {
+//     copilotIframe.style.display = copilotIframe.style.display === "none" ? "block" : "none";
+//   });
 
-  document.body.appendChild(copilotButton);
-});
+//   document.body.appendChild(copilotButton);
+// });
 
-$(document).ready(function () {
-  // Get today's date and subtract 1 day
-  const now = new Date();
-  now.setDate(now.getDate() - 1); // backdate by 1 day
-
-  const options = {
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric',
-  };
-
-  const formattedDate = now.toLocaleDateString('en-GB', options);
-
-  // Set text with fixed time
-  $('#data-date').text(`Data as of ${formattedDate}, 23:59`);
-});
 
 
 $(document).ready(function() {
@@ -571,17 +555,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })(jQuery);
 
-document.addEventListener("DOMContentLoaded", function () {
-const agroDropdown = document.getElementById('agroChainDropdown');
-if (agroDropdown) {
-  agroDropdown.addEventListener('click', function (e) {
-    // Optional: prevent Bootstrap's dropdown from opening
-    e.stopPropagation(); // Optional if you still want dropdown to work on hover
-    window.location.href = this.getAttribute('href');
-  });
-}
-});
-
 
 (function($) {
 
@@ -649,34 +622,6 @@ if (isActive) {
 }
 });
 
-// function switchIframeSrcForMobile(lang) {
-// const iframe = document.querySelector('iframe[name="iframe_tanistats"]');
-// if (!iframe) return;
-
-// const isMobile = window.innerWidth < 420;
-
-// // Your mobile URLs per language
-// const mobileUrls = {
-//   my: "https://app.powerbi.com/view?r=eyJrIjoiOTNiYzg0OGYtZDMxYy00MzBjLWE0NWYtNDdhMzY5ZTYyMDc4IiwidCI6IjM3M2U5MGQyLWQ5YTMtNDNiNS04MzJlLWM4ZTk4NDdhNzlmOCIsImMiOjEwfQ%3D%3D",
-//   en: "https://app.powerbi.com/view?r=eyJrIjoiNGE2YjdmOTktMTNjMi00NGI3LTk0ODYtZGY5MjA0YTA1MzA3IiwidCI6IjM3M2U5MGQyLWQ5YTMtNDNiNS04MzJlLWM4ZTk4NDdhNzlmOCIsImMiOjEwfQ%3D%3D" // replace this
-// };
-
-// // Default URLs from data attributes
-// const defaultSrc = lang === "my" ? iframe.getAttribute('data-my') : iframe.getAttribute('data-en');
-// const mobileSrc = mobileUrls[lang];
-
-// if (isMobile) {
-//   if (iframe.src !== mobileSrc) {
-//     iframe.src = mobileSrc;
-//   }
-//   iframe.style.height = "4200px";
-// } else {
-//   if (iframe.src !== defaultSrc) {
-//     iframe.src = defaultSrc;
-//   }
-//   iframe.style.height = "2550px";
-// }
-// }
 
 document.addEventListener('DOMContentLoaded', function () {
   const btn = document.getElementById('scrollToTopBtn');
