@@ -76,9 +76,9 @@
           h2_dataExplorer:"TableFlex",
           h2_dataRequest:"Data Request",
           article_t:"Our Latest Articles",
-          article_1:"ACHIEVEMENT AND WAY FORWARD OF FISHERIES SUBSECTOR (AGROFOOD)",
-          article_2:"STRENGTHENING THE LIVESTOCK INDUSTRY",
-          article_3:"POINT OF VIEW OF THE NATIONAL AGROFOOD CROP SUBSECTOR",
+          article_1:"Achievement and Way Forward of Fisheries Subsector (Agrofood)",
+          article_2:"Strengthening the Livestock Industry",
+          article_3:"Point of View of the National Agrofood Crop Subsector",
           article_date1:"Published date: 1 October 2024",
           article_date2:"Published date: 22 September 2024",
           article_date3:"Published date: 21 September 2024",
@@ -100,6 +100,7 @@
           p_footer:"© 2025 Integrated Agricultural Statistical System",
           about: "About Us",
           contact: "Contact Us",
+          reference_tf: "2023 Reference Data",
           totalHoldings: "<strong>Overall</strong>",
           totalFarmers: "<strong>Individual</strong>",
           totalCompanies: "<strong>Establishment</strong>",
@@ -171,9 +172,9 @@
           h2_dataExplorer:"TableFlex",
           h2_dataRequest:"Permintaan Data",
           article_t:"Artikel Terbaharu Kami",
-          article_1:"PENCAPAIAN DAN HALA TUJU SUBSEKTOR PERIKANAN (AGROMAKANAN)",
-          article_2:"PENGUKUHAN SEKTOR INDUSTRI TERNAKAN",
-          article_3:"SUDUT PANDANG SUBSEKTOR TANAMAN AGROMAKANAN NEGARA",
+          article_1:"Pencapaian dan Hala Tuju Subsektor Perikanan (Agromakanan)",
+          article_2:"Pengukuhan Sektor Industri Ternakan",
+          article_3:"Sudut Pandang Subsektor Tanaman Agromakanan Negara",
           article_date1:"Tarikh diterbitkan: 1 Oktober 2024",
           article_date2:"Tarikh diterbitkan: 22 September 2024",
           article_date3:"Tarikh diterbitkan: 21 September 2024",
@@ -195,6 +196,7 @@
           p_footer:"© 2025 Sistem Statistik Pertanian Bersepadu",
           about: "Tentang Kami",
           contact: "Hubungi Kami",
+          reference_tf: "Data Rujukan 2023",
           totalHoldings: "<strong>Keseluruhan</strong>",
           totalFarmers: "<strong>Individu</strong>",
           totalCompanies: "<strong>Pertubuhan</strong>",
@@ -298,48 +300,48 @@
       }
   });
 
-  $(document).ready(function () {
-    let currentPath = window.location.pathname.toLowerCase().replace(/\/$/, ""); // Remove trailing slash
-    console.log("Current path:", currentPath); // Debugging
+  // $(document).ready(function () {
+  //   let currentPath = window.location.pathname.toLowerCase().replace(/\/$/, ""); // Remove trailing slash
+  //   console.log("Current path:", currentPath); // Debugging
 
-    // Reset active classes on all nav links
-    $(".navbar-nav .nav-link").removeClass("active");
+  //   // Reset active classes on all nav links
+  //   $(".navbar-nav .nav-link").removeClass("active");
 
-    // Highlight exact page links
-    $(".navbar-nav .nav-link").each(function () {
-      let menuItem = $(this);
-      let menuHref = menuItem.attr("href");
-      if (!menuHref) return; // Skip if no href
-      menuHref = menuHref.toLowerCase().replace(/\/$/, "");
-      console.log("Checking menuHref:", menuHref);
+  //   // Highlight exact page links
+  //   $(".navbar-nav .nav-link").each(function () {
+  //     let menuItem = $(this);
+  //     let menuHref = menuItem.attr("href");
+  //     if (!menuHref) return; // Skip if no href
+  //     menuHref = menuHref.toLowerCase().replace(/\/$/, "");
+  //     console.log("Checking menuHref:", menuHref);
 
-      // If current path exactly matches link href, highlight it
-      if (currentPath === menuHref) {
-        menuItem.addClass("active");
-      }
-    });
+  //     // If current path exactly matches link href, highlight it
+  //     if (currentPath === menuHref) {
+  //       menuItem.addClass("active");
+  //     }
+  //   });
 
-    // Define pages that belong to CitraTani dropdown
-    let citraTaniPages = [
-      "/tanifacts",
-      "/overview_tanifacts",
-      "/crops",
-      "/livestock",
-      "/fisheries",
-      "/aquaculture",
-      "/forest",
-      "/agroprice",
-      "/agrochain",
-      "/myfoodstats"
+  //   // Define pages that belong to CitraTani dropdown
+  //   let citraTaniPages = [
+  //     "/tanifacts",
+  //     "/overview_tanifacts",
+  //     "/crops",
+  //     "/livestock",
+  //     "/fisheries",
+  //     "/aquaculture",
+  //     "/forest",
+  //     "/agroprice",
+  //     "/agrochain",
+  //     "/myfoodstats"
 
-    ];
+  //   ];
 
-    // If currentPath starts with any of these, highlight the dropdown toggle (#tanifactsDropdown)
-    if (citraTaniPages.some(page => currentPath.startsWith(page))) {
-      console.log("CitraTani dropdown active");
-      $("#tanifactsDropdown").addClass("active");
-    }
-  });
+  //   // If currentPath starts with any of these, highlight the dropdown toggle (#tanifactsDropdown)
+  //   if (citraTaniPages.some(page => currentPath.startsWith(page))) {
+  //     console.log("CitraTani dropdown active");
+  //     $("#tanifactsDropdown").addClass("active");
+  //   }
+  // });
 
   $(document).ready(function () {
     // Normalize current path: lowercase, strip trailing slash and .html
@@ -592,7 +594,7 @@ if (path.endsWith('/')) {
 }
 
 // Define paths to check (no .html, because deployed URLs don't have them)
-const pathsToMatch = ["/tanifacts", "/agroprice", "/agrochain"];
+const pathsToMatch = ["/tanifacts", "/agroprice", "/myfoodstats", "/agrochain"];
 
 // Check if current path matches any defined path exactly
 const isActive = pathsToMatch.includes(path);
