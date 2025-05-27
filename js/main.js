@@ -345,32 +345,35 @@
 
   $(document).ready(function () {
     // Normalize current path: lowercase, strip trailing slash and .html
-     let currentPath = window.location.pathname.toLowerCase()
+    let currentPath = window.location.pathname.toLowerCase()
       .replace(/\/$/, "")         // remove trailing slash
-       .replace(/\.html$/, "")     // remove .html from end
-
-     console.log("Current path:", currentPath);
-
-     $(".navbar-nav .nav-link").removeClass("active");
-
+      .replace(/\.html$/, "");    // remove .html from end
+  
+    console.log("Current path:", currentPath);
+  
+    $(".navbar-nav .nav-link").removeClass("active");
+  
     $(".navbar-nav .nav-link").each(function () {
-       let menuItem = $(this);
-       let menuHref = menuItem.attr("href");
-       if (!menuHref) return;
-
-       // Normalize href: lowercase, strip trailing slash and .html
-       menuHref = menuHref.toLowerCase()
-         .replace(/\/$/, "")
-         .replace(/\.html$/, ""); // generalized .html removal
-
-       console.log("Checking menuHref:", menuHref);
-
-       if (currentPath.endsWith(menuHref)) {
-         menuItem.addClass("active");
-       }
-     });
-
-    // Optional dropdown highlight
+      let menuItem = $(this);
+      let menuHref = menuItem.attr("href");
+      if (!menuHref) return;
+  
+      // Skip if it's the external caknaTani link
+      if (menuHref.includes("caknatani")) return;
+  
+      // Normalize href
+      menuHref = menuHref.toLowerCase()
+        .replace(/\/$/, "")
+        .replace(/\.html$/, "");
+  
+      console.log("Checking menuHref:", menuHref);
+  
+      if (currentPath.endsWith(menuHref)) {
+        menuItem.addClass("active");
+      }
+    });
+  
+    // Optional: dropdown highlight
     let citraTaniPages = [
       "tanifacts",
       "overview_tanifacts",
@@ -381,12 +384,17 @@
       "forest",
       "agroprice",
       "agrochain",
-      "/myfoodstats"
+      "myfoodstats"
     ];
-
+  
     if (citraTaniPages.some(page => currentPath.endsWith(page))) {
       $("#tanifactsDropdown").addClass("active");
     }
+  
+    // Remove focus from caknaTani after click
+    $('a.nav-link[href*="caknatani"]').on('click', function () {
+      $(this).blur();
+    });
   });
 
 /* window.chatbaseConfig = {
