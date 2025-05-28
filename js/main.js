@@ -61,7 +61,7 @@
           carousel_title_5:"Agri Innovation",
           carousel_subtitle_1:"Integrated Agriculture Data for a Sustainable Future",
           carousel_subtitle_2:"Empowering Policymakers & Farmers with Accurate Data",
-          carousel_subtitle_3:"Ensuring Resilience through Smart Agriculture Insights",
+          carousel_subtitle_3:"Strengthening Food Security Through Integrated Agricultural Statistics",
           carousel_subtitle_4:"Leveraging Technology for Efficient Agriculture",
           carousel_subtitle_5:"Driving Sustainability Through Innovation",
           glance_mysagr:"Agriculture at a Glance: Number of Agricultural Holdings",
@@ -118,7 +118,7 @@
           ss4: "(<strong>25.3%</strong> of total individual agricultural holdings)",
           ss5: "(<strong>13.9%</strong> of total individual agricultural holdings)",
           ss6: "(<strong>45.4%</strong> of total individual agricultural holdings)",
-          ss7: "(<strong>2.9%</strong> of total individual agricultural holdings)",
+          ss7: "(<strong>0.8%</strong> of total individual agricultural holdings)",
           ss8: "(<strong>2023</strong> Reference Data)"
 
 
@@ -160,7 +160,7 @@
           carousel_title_5:"Inovasi Agri",
           carousel_subtitle_1:"Data Pertanian Bersepadu untuk Masa Depan Lestari",
           carousel_subtitle_2:"Memberdayakan Pembuat Dasar & Petani dengan Data yang Tepat",
-          carousel_subtitle_3:"Memastikan Ketahanan melalui Wawasan Pertanian Pintar",
+          carousel_subtitle_3:"Memperkasa Keterjaminan Makanan Melalui Integrasi Statistik Pertanian",
           carousel_subtitle_4:"Memanfaatkan Teknologi untuk Pertanian yang Cekap",
           carousel_subtitle_5:"Mendorong Kelestarian Melalui Inovasi",
           glance_mysagr:"Pertanian Sepintas Lalu: Bilangan Pegangan Pertanian",
@@ -217,7 +217,7 @@
           ss4: "(<strong>25.3%</strong> daripada jumlah pegangan pertanian individu)",
           ss5: "(<strong>13.9%</strong> daripada jumlah pegangan pertanian individu)",
           ss6: "(<strong>45.4%</strong> daripada jumlah pegangan pertanian individu)",
-          ss7: "(<strong>2.9%</strong> daripada jumlah pegangan pertanian individu)",
+          ss7: "(<strong>0.8%</strong> daripada jumlah pegangan pertanian individu)",
           ss8: "(Data Rujukan <strong>2023</strong>)"
       }
   };
@@ -511,7 +511,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ["bi-gender-female", "text-danger", "femaleFarmers", "255,690", "ss4"],
     ["bi-gender-ambiguous", "text-secondary", "youngFarmers", "142,888", "ss5"],
     ["bi-person", "text-info", "seniorFarmers", "458,263", "ss6"],
-    ["bi-globe2", "text-primary", "foreignInvolvement", "29,594", "ss7"],
+    ["bi-globe2", "text-primary", "foreignInvolvement", "8,301", "ss7"],
     ["bi-bar-chart-line", "text-success", "avgAge", "56.5", "ss8"]
   ];
 
