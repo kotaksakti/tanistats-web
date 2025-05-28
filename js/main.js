@@ -124,7 +124,7 @@
 
       },
       my: {
-          headline_text:"📢 Sistem Statistik Pertanian Bersepadu (TaniStats) Melancarkan Dashboard Baharu! &nbsp;&nbsp;&nbsp; 🌱 Teroka TaniStats Hari Ini! &nbsp;&nbsp;&nbsp; 🚜 Sokong Pertanian Lestari Melalui Data!",
+          headline_text:"📢 Sistem Statistik Pertanian Bersepadu (TaniStats) Melancarkan Dashboard Baharu! &nbsp;&nbsp;&nbsp; 🌱 Teroka TaniStats Hari Ini! &nbsp;&nbsp;&nbsp; 🚜 Sokong Pertanian Mampan Melalui Data!",
           home: "Utama",
           d_explorer: "TableFlex",
           d_request: "Permintaan Data",
