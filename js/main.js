@@ -265,7 +265,7 @@
 
   // ✅ Load stored language on page load
   $(document).ready(function () {
-      let storedLang = localStorage.getItem("lang") || "en";
+      let storedLang = localStorage.getItem("lang") || "my";
       changeLanguage(storedLang);
 
       $("#enLang, #myLang").click(function (e) {
